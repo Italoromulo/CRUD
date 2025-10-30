@@ -1,0 +1,113 @@
+/* ===== TEMA DARK PARA O PROJETO DE PC ===== */
+
+/* --- TEMA GERAL --- */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* --- TÍTULOS --- */
+h2, h3 {
+    color: #ffffff;
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 10px;
+}
+
+/* --- CARD (Tela Inicial) --- */
+.card {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    /* Adiciona o brilho azul (glow) */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 0 15px #0d6efd;
+}
+
+.card-header {
+    background-color: #0d6efd;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+/* --- BOTÕES --- */
+.btn {
+    border: none;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+}
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Botões da tela inicial */
+.d-grid .btn-primary {
+    background-color: #0d6efd;
+}
+.d-grid .btn-info {
+    background-color: #315CFD;
+    color: white !important;
+}
+.d-grid .btn-secondary {
+    background-color: #4a67ff;
+    color: white !important;
+}
+
+/* Botões da tabela (Editar/Excluir) */
+.btn-warning {
+    color: #121212;
+}
+
+/* --- FORMULÁRIOS (Cadastro, Editar, Consulta) --- */
+.form-control {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+.form-control:focus {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.form-floating > label {
+    color: #aaa;
+}
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: #0d6efd;
+}
+
+/* --- TABELA (Consultar Todos, Resultado Consulta) --- */
+.table {
+    color: #e0e0e0;
+    background-color: #1e1e1e;
+    border-color: #444;
+}
+.table-light, .table-light > th, .table-light > td {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+.table > thead {
+    background-color: #0d6efd !important;
+}
+.table > thead th {
+    color: white !important;
+    border-color: #0a58ca;
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+}
+.table-hover > tbody > tr:hover > * {
+    background-color: #3c3c3c;
+    color: #f0f0e0;
+}
